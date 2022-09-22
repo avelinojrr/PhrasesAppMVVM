@@ -7,7 +7,7 @@ import com.example.quotesappmvvm.model.TitleModel
 
 class TitleViewModel: ViewModel() {
 
-    private val titleModel = MutableLiveData<TitleModel>()
+    val titleModel = MutableLiveData<TitleModel>()
 
     fun getTitle(){
         val currentTitle : TitleModel = ListTitle.titleRandom()
