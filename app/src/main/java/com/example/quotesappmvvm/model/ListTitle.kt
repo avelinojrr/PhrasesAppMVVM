@@ -3,7 +3,7 @@ package com.example.quotesappmvvm.model
 class ListTitle {
     companion object {
         fun titleRandom(): TitleModel{
-            val position = (0..47).random()
+            val position = (0..49).random()
             return title[position]
         }
         private val title = listOf<TitleModel>(
@@ -203,7 +203,6 @@ class ListTitle {
                 title = "I am not the next Bill Gates or Steve Jobs: I am the first Axel Avelino.",
                 credits = "Axel Avelino"
             ),
-
 
         )
     }
