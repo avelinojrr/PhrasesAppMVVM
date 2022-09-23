@@ -19,8 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // vamos a enlazar el layout con el view usando el observer y el viewmodel
-        // con binding
+        // Now we link it to the viewModel and join the binding with the layout
 
         quoteViewModel.titleModel.observe(this, Observer {
             binding.TextContainerView.text = it.title
